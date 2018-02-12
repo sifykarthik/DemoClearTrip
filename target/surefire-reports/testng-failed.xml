@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ClearTripSuite]" verbose="0">
+  <parameter name="expectedTitle" value="#1 Site for Booking Flights, Hotels, Packages, Trains &amp; Local activities."/>
+  <parameter name="url" value="https://www.cleartrip.com/"/>
+  <test parallel="classes" name="SanityTest(failed)">
+    <classes>
+      <class name="cleartrip.testcases.TestNgExample1">
+        <methods>
+          <include name="closeAllWindows"/>
+          <include name="verifyFlightSearch"/>
+          <include name="callDriver"/>
+        </methods>
+      </class> <!-- cleartrip.testcases.TestNgExample1 -->
+      <class name="cleartrip.testcases.TestNgExamples">
+        <methods>
+          <include name="initializeDriver"/>
+          <include name="closeAllWindows"/>
+        </methods>
+      </class> <!-- cleartrip.testcases.TestNgExamples -->
+    </classes>
+  </test> <!-- SanityTest(failed) -->
+</suite> <!-- Failed suite [ClearTripSuite] -->
